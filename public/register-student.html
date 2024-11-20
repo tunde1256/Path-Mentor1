@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h2>Register</h2>
+      <input type="text" id="registerName" placeholder="Full Name" required>
+      <input type="email" id="registerEmail" placeholder="Email" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <input type="text" id="registerSubjects" placeholder="Enrolled Subjects (comma-separated)" required>
+      <button onclick="registerStudent()">Register</button>
+      <p class="toggle-form">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+      <div id="registerMessage"></div>
+    </div>
+  </div>
+  <script src="./register.js"></script>
+</body>
+</html>

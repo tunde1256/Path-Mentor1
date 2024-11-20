@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Mentor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        header {
+            background-color: #0288d1;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            color: #ffeb3b;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content h2 {
+            color: #ffeb3b;
+            margin-top: 0;
+        }
+        .content p {
+            font-size: 18px;
+            color: #ffffffbb;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .buttons button {
+            background-color: #ffeb3b;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #ffca28;
+        }
+        .forgot-password {
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+        .static-images {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .static-images img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .mission-vision {
+            text-align: left;
+            margin: 20px 0;
+            color: #fff;
+        }
+        .mission-vision h3 {
+            color: #ffeb3b;
+        }
+        .review-form {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .review-form input, .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .review-form button {
+            background-color: #ffeb3b;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .review-form button:hover {
+            background-color: #ffca28;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Path Mentor</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <div class="content">
+            <h2>Welcome to Path Mentor</h2>
+            <p>Connecting students and young professionals with experienced mentors to guide you on your career path.</p>
+            <div class="buttons">
+                <button onclick="registerStudent()">Register as Student</button>
+                <button onclick="registerTeacher()">Register as Teacher</button>
+                <button onclick="login()">Login</button>
+            </div>
+            <div class="forgot-password">
+                <a href="path/to/reset-password.html">Forgot Password?</a>
+            </div>
+            <div class="static-images">
+                <img src="picture1.jpg" alt="Picture 1">
+                <img src="picture2.jpg" alt="Picture 2">
+                <img src="picture3.jpg" alt="Picture 3">
+            </div>
+            <div class="mission-vision">
+                <h3>Our Mission</h3>
+                <p>To empower the next generation of students and professionals by providing access to experienced mentors who can guide them in their educational and career journeys.</p>
+                <h3>Our Vision</h3>
+                <p>To become the leading platform for mentorship in Nigeria, bridging the gap between aspiring individuals and seasoned professionals.</p>
+            </div>
+            <div class="review-form">
+                <h3>Submit Your Review</h3>
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="review" placeholder="Your Review" rows="4"></textarea>
+                <button onclick="submitReview()">Submit Review</button>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Path Mentor. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        function registerStudent() {
+            window.location.href = 'register-student.html';
+        }
+
+        function registerTeacher() {
+            window.location.href = 'register-teacher.html';
+        }
+
+        function login() {
+            window.location.href = 'login.html';
+        }
+
+        function submitReview() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const review = document.getElementById('review').value;
+
+            if (name && email && review) {
+                alert('Thank you for your review!');
+                // You can add code here to send the review data to your server
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('review').value = '';
+            } else {
+                alert('Please fill out all fields before submitting.');
+            }
+        }
+    </script>
+</body>
+</html>

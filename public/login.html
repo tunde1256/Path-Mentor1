@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h2>Login</h2>
+      <select id="userType" required>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button onclick="loginUser()">Login</button>
+      <p class="toggle-form">
+        Don't have an account? <a href="register-student.html">Register here</a>
+      </p>
+      <div id="loginMessage"></div>
+    </div>
+  </div>
+  <script src="./login.js"></script>
+</body>
+</html>
