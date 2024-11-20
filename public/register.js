@@ -1,4 +1,4 @@
-const apiBaseUrl = 'http://localhost:2070/api/students';
+const apiBaseUrl = 'path-mentor1.onrender.com/api/students';
 
 // Register a new student
 async function registerStudent() {

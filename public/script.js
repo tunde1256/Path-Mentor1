@@ -9,7 +9,7 @@ document.getElementById('registerForm').addEventListener('submit', async functio
     const subjects = document.getElementById('subjects').value.split(',').map(subject => subject.trim());
 
     // Send data to the server to register the teacher
-    const response = await fetch('http://localhost:2070/api/teacher/register', {
+    const response = await fetch('path-mentor1.onrender.com/api/teacher/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
 const apiBaseUrls = {
-    student: 'http://localhost:2070/api/students/',
-    teacher: 'http://localhost:2070/api/teachers/',
+    student: 'path-mentor1.onrender.com/api/students/',
+    teacher: 'path-mentor1.onrender.com/api/teachers/',
   };
   
   // Universal Login Function for Students and Teachers
